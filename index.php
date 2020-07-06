@@ -9,6 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <ul>
+            <li><a href="index.php">Welcome</a></li>
+            <li><a href="big/index.php">Big</a></li>
+            <li><a href="fp/index.php">Final Project</a></li>
+            <li><a href="contactme.php">Contact Aggie</a></li>
+        </ul>
         <script src=""></script>
     </body>
 </html>
