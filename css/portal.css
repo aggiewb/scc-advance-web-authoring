@@ -1,0 +1,13 @@
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+}
