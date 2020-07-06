@@ -36,6 +36,11 @@
             
                 <p>Currently when I'm not studying programming, I enjoy spending time with my husband, reading, playing video games and board games, traveling, or working on personal programming projects. I aspire to learn as much as I can so I can put ideas into motion.</p>
             </section>
+            <footer>
+                <p>&copy;2020 by <a href="contactme.php" target="_blank">Aggie Wheeler Bateman</a></p>
+                <a href="http://validator.w3.org/check/referer" target="_blank"><img class="val" src="images/html_validator.png" alt="An icon representing HTML validation."></a>
+                <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank"><img class="val" src="images/css_validator.png" alt="An icon representing CSS validation."></a>
+            </footer>
         </main>
         <script src=""></script>
     </body>
