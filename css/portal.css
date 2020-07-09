@@ -1,13 +1,125 @@
+:root {
+    --portal-light-color: #d6cec3;
+    --portal-dark-color: #2c363f;
+    --portal-bright-color: #f9dc5c;
+}
+
+body {
+    background-color: var(--portal-dark-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--portal-bright-color);
+    margin-left: 1%;
+    font-size: 1.25rem;
+}
+
+portal.wrapper {
+    background-color: #fff;
+    overflow: auto;
+}
+
+h1>a {
+    text-decoration: none;
+    color: var(--portal-dark-color);
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    clear: both;
+}
+
 /* START RESPONSIVE STYLES */
 
 /* DESKTOP */
 @media all and (min-width:1400px) {
+    portal.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    section {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        width: 65%;
+        float: left;
+    }
+    
+     aside {    
+        width: 34%;
+        float: right;
+    }
+            
+    img.desktop {
+        float: left;
+        width: 50%;
+        display: inline-block;
+    }
+    
+    img.tablet, img.phone {
+        display: none;
+    }  
+    
+    /* Change background color of navigation on selected page */
+    ul li a.selected {
+        background-color: var(--portal-light-color);
+        color: var(--portal-dark-color);
+    }
 }
+
 
 /* TABLET */
 @media all and (min-width:737px) and (max-width:1399px) {
+    section {
+        width: 60%;
+        float: left;
+    }
+    
+    aside {    
+        width: 39%;
+        float: right;
+    }
+    
+    img.tablet {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    img.desktop, img.phone {
+        display: none;
+    }  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul li a.selected {
+        background-color: var(--portal-light-color);;
+        color:var(--portal-dark-color);
+    }
 }
 
 /* PHONE */
 @media all and (max-width:736px) {
+    img.phone {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    img.tablet, img.desktop {
+        display: none;
+    }  
 }
