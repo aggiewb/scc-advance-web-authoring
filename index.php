@@ -11,7 +11,7 @@
         <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
-        <main class="wrapper">
+        <main>
             <header>
                 <h1><a href="index.php">Aggie Wheeler Bateman IT162 Portal</a></h1>
                 <nav>
@@ -27,13 +27,12 @@
             </header>
             <!-- START LEFT COL -->
             <section>
-                <h2 class="welcome">Welcome!</h2>
+                <h2 class="welcome">Hi!</h2>
                 <img alt="" class="desktop"></img>
                 <img alt="" class="phone"></img>
 
-                <p>Hi! My name is Aggie, and I am working towards a web development certificate from Seattle Central College with additional focus on web 
-                scripting and software development, and I currently live in the Maple Leaf neighborhood with my husband. I have experience in HTML, CSS, 
-                Python, JS, SQL, PHP, Django, and Java.</p>
+                <p>My name is Aggie, and I am working towards a web development certificate from Seattle Central College with additional focus on web 
+                scripting and software development, and I currently live in the Maple Leaf neighborhood with my husband.</p>
 
                 <p>I grew up in Mobile, Alabama where I loved spending time on the coast. I later attended the University of Southern Mississippi and 
                 earned my bachelor's degree in Elementary Education, but ultimately, I decided the career wasn't for me.</p>
@@ -52,15 +51,12 @@
             </section>
             <!-- START RIGHT COL -->
             <aside>
-                <h3>Right Column</h3>
                 <img src="" class="tablet" alt="">
-                <p>Lorem Ipsum place holder text goes here for now</p>
-                <p>Lorem Ipsum place holder text goes here for now</p>
             </aside>
             <footer>
                 <p>&copy;2020 by <a href="contactme.php" target="_blank">Aggie Wheeler Bateman</a></p>
-                <a href="http://validator.w3.org/check/referer" target="_blank"><img class="val" src="images/html_validator.png" alt="An icon representing HTML validation."></a>
-                <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank"><img class="val" src="images/css_validator.png" alt="An icon representing CSS validation."></a>
+                <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a>
+                <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
             </footer>
         </main>
         <script src="js/nav.js"></script>
