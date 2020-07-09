@@ -22,7 +22,7 @@ input:required {
     border: var(--one-pixel) solid var(--form-bright-color);
 }
 
- input:optional, textarea:optional {
+input:optional, textarea:optional {
      background-color: #f1f1f1;
      border: var(--one-pixel) solid var(--form-light-color);
 }
