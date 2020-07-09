@@ -10,84 +10,96 @@ body {
     color: var(--portal-bright-color);
     margin-left: 1%;
     font-size: 1rem;
+    display: grid;
+    grid-template-rows: [start] 30% [first-line] 40% [second-line] 30% [end];
 }
 
-main {
-    overflow: auto;
-}
-
-h1>a {
+h1>a, h2 {
+    color: var(--portal-bright-color);
+    font-size: 2.5rem;
+    font-family: 'Lilita One', cursive;
     text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer a, section a {
+    color: #B3CAEA;
+}
+
+  
+/* Change background color of navigation on selected page */
+ul li a.selected {
+    background-color: var(--portal-bright-color);
     color: var(--portal-dark-color);
 }
 
-footer {
-    clear: both;
+header {
+    grid-row: start / first-line;
 }
+
+main {
+    grid-row: first-line / second-line;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 25%;
+    grid-row: second-line / end;
+    display: flex;
+    margin: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+#validators{
+    margin-left: 1rem;
+}
+
 
 /* START RESPONSIVE STYLES */
 /* DESKTOP */
 @media all and (min-width:1400px) {
-    main {
-        width: 80%;
-        margin: auto;
+    #profile-pictures {
+        margin: 1rem;
     }
 
-    section {
-        font-family: 'Open Sans', sans-serif;
-        width: 65%;
-        float: left;
+    main {
+        width: 85%;
     }
-    
-    aside {    
-        width: 34%;
-        float: right;
+
+    footer {
+        width: 40%;
     }
             
     img.desktop {
-        width: 50%;
-        float: left;
+        width: 100%;
     }
     
     img.tablet, img.phone {
         display: none;
     }  
-    
-    /* Change background color of navigation on selected page */
-    ul li a.selected {
-        background-color: var(--portal-bright-color);
-        color: var(--portal-dark-color);
-    }
 }
-
 
 /* TABLET */
 @media all and (min-width:737px) and (max-width:1399px) {
-    section {
-        width: 60%;
-        float: left;
+    aside {
+        margin: 1rem;
+        width: 50%;
     }
-    
-    aside {    
-        width: 39%;
-        float: right;
-    }
-    
-    img.tablet {
-        width: 100%;
-        display: inline-block;
+
+    footer {
+        width: 50%;
     }
     
     img.desktop, img.phone {
         display: none;
     }  
-    
-    
-    /* Change background color of navigation on selected page */
-    ul li a.selected {
-        background-color: var(--portal-light-color);
-        color:var(--portal-dark-color);
-    }
 }
 
 /* PHONE */
