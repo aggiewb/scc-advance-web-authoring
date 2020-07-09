@@ -10,7 +10,6 @@ ul {
 /* Float the list items side by side */
 ul li {
     float: left;
-    border-right: #2c363f solid .0625rem;
 }
 
 ul li a {
@@ -23,7 +22,7 @@ ul li a {
     font-size: 1.0625rem;
 }
 
-ul li:hover {
+ul li a:hover {
     background-color: #f9dc5c;
 }
 
