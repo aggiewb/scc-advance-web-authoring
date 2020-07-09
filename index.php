@@ -11,29 +11,29 @@
         <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
+        <header>
+            <h1><a href="index.php">Aggie Wheeler Bateman IT162 Portal</a></h1>
+            <nav>
+                <ul class="not-responsive">
+                    <li><a href="index.php" class="selected">Welcome</a></li>
+                    <li><a href="big/index.php">Big</a></li>
+                    <li><a href="fp/index.php">Final Project</a></li>
+                    <li><a href="contactme.php">Contact Aggie</a></li>
+                    <li class="icon"><a>&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- START LEFT COL -->
         <main>
-            <header>
-                <h1><a href="index.php">Aggie Wheeler Bateman IT162 Portal</a></h1>
-                <nav>
-                    <ul class="not-responsive">
-                        <li><a href="index.php" class="selected">Welcome</a></li>
-                        <li><a href="big/index.php">Big</a></li>
-                        <li><a href="fp/index.php">Final Project</a></li>
-                        <li><a href="contactme.php">Contact Aggie</a></li>
-                        <li class="icon"><a>&#9776;</a></li>
-
-                    </ul>
-                </nav>
-            </header>
-            <!-- START LEFT COL -->
-            <section>
-                <h2 class="welcome">Hi!</h2>
-                <img alt="" class="desktop"></img>
-                <img alt="" class="phone"></img>
-
+            <div id="profile-pictures">
+                <img src="images/aggie_desktop.jpg" alt="Aggie standing in a courtyard in Germany" class="desktop"></img>
+                <img src="images/aggie_phone.png" alt="A headshot picture of Aggie with a wide smile" class="phone"></img>
+            </div>
+            <article>
+                <h2>About me</h2>
                 <p>My name is Aggie, and I am working towards a web development certificate from Seattle Central College with additional focus on web 
                 scripting and software development, and I currently live in the Maple Leaf neighborhood with my husband.</p>
-
+    
                 <p>I grew up in Mobile, Alabama where I loved spending time on the coast. I later attended the University of Southern Mississippi and 
                 earned my bachelor's degree in Elementary Education, but ultimately, I decided the career wasn't for me.</p>
                 
@@ -48,17 +48,18 @@
             
                 <p>Currently when I'm not studying programming, I enjoy spending time with my husband, reading, playing video games and board games, traveling, 
                 or working on personal programming projects. I aspire to learn as much as I can so I can put ideas into motion.</p>
-            </section>
-            <!-- START RIGHT COL -->
+            </article>
             <aside>
-                <img src="" class="tablet" alt="">
+                <img src="images/aggie_tablet.JPG" class="tablet" alt="Aggie on a standing on a small bridge while on a nature hike">
             </aside>
-            <footer>
-                <p>&copy;2020 by <a href="contactme.php" target="_blank">Aggie Wheeler Bateman</a></p>
+        </main>
+        <footer>
+            <p>&copy;2020 by <a href="contactme.php" target="_blank">Aggie Wheeler Bateman</a></p>
+            <div id="validators">
                 <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a>
                 <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
-            </footer>
-        </main>
+            </div>
+        </footer>
         <script src="js/nav.js"></script>
     </body>
 </html>
