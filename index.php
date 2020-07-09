@@ -11,23 +11,25 @@
         <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
-        <main>
+        <main class="wrapper">
             <header>
                 <h1><a href="index.php">Aggie Wheeler Bateman IT162 Portal</a></h1>
                 <nav>
-                    <ul>
-                        <li><a href="index.php">Welcome</a></li>
+                    <ul class="not-responsive">
+                        <li><a href="index.php" class="selected">Welcome</a></li>
                         <li><a href="big/index.php">Big</a></li>
                         <li><a href="fp/index.php">Final Project</a></li>
                         <li><a href="contactme.php">Contact Aggie</a></li>
+                        <li class="icon"><a>&#9776;</a></li>
+
                     </ul>
                 </nav>
             </header>
+            <!-- START LEFT COL -->
             <section>
                 <h2 class="welcome">Welcome!</h2>
-                <img alt=""></img>
-                <img alt=""></img>
-                <img alt=""></img>
+                <img alt="" class="desktop"></img>
+                <img alt="" class="phone"></img>
 
                 <p>Hi! My name is Aggie, and I am working towards a web development certificate from Seattle Central College with additional focus on web 
                 scripting and software development, and I currently live in the Maple Leaf neighborhood with my husband. I have experience in HTML, CSS, 
@@ -48,12 +50,19 @@
                 <p>Currently when I'm not studying programming, I enjoy spending time with my husband, reading, playing video games and board games, traveling, 
                 or working on personal programming projects. I aspire to learn as much as I can so I can put ideas into motion.</p>
             </section>
+            <!-- START RIGHT COL -->
+            <aside>
+                <h3>Right Column</h3>
+                <img src="" class="tablet" alt="">
+                <p>Lorem Ipsum place holder text goes here for now</p>
+                <p>Lorem Ipsum place holder text goes here for now</p>
+            </aside>
             <footer>
                 <p>&copy;2020 by <a href="contactme.php" target="_blank">Aggie Wheeler Bateman</a></p>
                 <a href="http://validator.w3.org/check/referer" target="_blank"><img class="val" src="images/html_validator.png" alt="An icon representing HTML validation."></a>
                 <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank"><img class="val" src="images/css_validator.png" alt="An icon representing CSS validation."></a>
             </footer>
         </main>
-        <script src=""></script>
+        <script src="js/nav.js"></script>
     </body>
 </html>
