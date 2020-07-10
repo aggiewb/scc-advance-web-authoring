@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Aggie's IT162 Portal</title>
-        <link href="css/portal.css" rel="stylesheet">
-        <link href="css/nav.css" rel="stylesheet">
-        <link href="css/form.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lilita+One|Open+Sans&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex, nofollow">
-    </head>
-    <body>
-        <header>
-            <h1><a href="index.php">Aggie Wheeler Bateman IT162 Portal</a></h1>
-            <nav>
-                <ul class="not-responsive">
-                    <li><a href="index.php">Welcome</a></li>
-                    <li><a href="big/index.php">Big</a></li>
-                    <li><a href="fp/index.php">Final Project</a></li>
-                    <li><a href="contactme.php">Contact Aggie</a></li>
-                    <li class="icon"><a>&#9776;</a></li>
-                </ul>
-            </nav>
-        </header>
+<?php include "includes/header.php";?>
         <!-- START LEFT COL -->
         <main>
             <div id="profile-pictures">
@@ -50,16 +26,7 @@
                 or working on personal programming projects. I aspire to learn as much as I can so I can put ideas into motion.</p>
             </article>
             <aside>
-                <img src="images/aggie_tablet.JPG" class="tablet" alt="Aggie on a standing on a small bridge while on a nature hike">
+                <img src="images/aggie_tablet.jpg" class="tablet" alt="Aggie on a standing on a small bridge while on a nature hike">
             </aside>
         </main>
-        <footer>
-            <p>&copy;2020 by <a href="contactme.php" target="_blank">Aggie Wheeler Bateman</a></p>
-            <div id="validators">
-                <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a>
-                <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
-            </div>
-        </footer>
-        <script src="js/nav.js"></script>
-    </body>
-</html>
+<?php include "includes/footer.php";?>
