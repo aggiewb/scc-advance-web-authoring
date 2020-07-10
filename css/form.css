@@ -1,3 +1,7 @@
+/*Using CSS custom properties (variables)*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
+/*A common best practice is to define custom properties on the :root pseudo-class, 
+so that it can be applied globally across your HTML document*/
 :root {
     --form-light-color: #d6cec3;
     --form-bright-color: #f9dc5c;
