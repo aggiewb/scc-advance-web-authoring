@@ -30,13 +30,6 @@ footer a, section a {
     color: #B3CAEA;
 }
 
-  
-/* Change background color of navigation on selected page */
-ul li a.selected {
-    background-color: var(--portal-bright-color);
-    color: var(--portal-dark-color);
-}
-
 header {
     grid-row: start / first-line;
 }
@@ -45,6 +38,7 @@ main {
     grid-row: first-line / second-line;
     display: flex;
     align-content: space-around;
+    width: 100%;
     
 }
 
@@ -52,14 +46,11 @@ footer {
     grid-row: second-line / end;
     display: flex;
     margin: var(--sixteen-pixels);
+    width: 100%;
 }
 
 footer p {
     margin: 0;
-}
-
-img {
-    width: 400px;
 }
 
 #validators{
@@ -81,10 +72,6 @@ img {
 
 /* TABLET */
 @media all and (min-width:737px) and (max-width:1399px) {
-    main {
-        width: 100%;
-    }
-
     footer {
         justify-content: flex-start;
     }
@@ -97,7 +84,6 @@ img {
 /* PHONE */
 @media all and (max-width:736px) {
     main, footer {
-        width: 100%;
         align-items: flex-start;
     }
 
@@ -109,8 +95,9 @@ img {
         margin-left: 5px;
     }
 
-    img {
-        width: 200px;
+    footer {
+        flex-direction: column;
+        align-items: center;
     }
     
     img.tablet, img.desktop {
