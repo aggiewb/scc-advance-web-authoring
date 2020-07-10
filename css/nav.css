@@ -2,7 +2,6 @@
 ul {
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
     background-color: #d6cec3;
     font-family: 'Lilita One', cursive;
     /* Flex the list items side by side */
