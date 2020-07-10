@@ -2,16 +2,17 @@
     --portal-light-color: #d6cec3;
     --portal-dark-color: #2c363f;
     --portal-bright-color: #f9dc5c;
+    --sixteen-pixels: 1rem;
 }
 
 body {
     background-color: var(--portal-dark-color);
     font-family: 'Open Sans', sans-serif;
     color: var(--portal-bright-color);
-    margin-left: 1%;
-    font-size: 1rem;
+    margin: var(--sixteen-pixels);
+    font-size: var(--sixteen-pixels);
     display: grid;
-    grid-template-rows: [start] 30% [first-line] 40% [second-line] 30% [end];
+    grid-template-rows: [start] 30% [first-line] 50% [second-line] 20%[end];
 }
 
 h1>a, h2 {
@@ -43,22 +44,26 @@ header {
 main {
     grid-row: first-line / second-line;
     display: flex;
-    justify-content: space-between;
+    align-content: space-around;
+    
 }
 
 footer {
-    width: 25%;
     grid-row: second-line / end;
     display: flex;
-    margin: 1rem;
+    margin: var(--sixteen-pixels);
 }
 
 footer p {
     margin: 0;
 }
 
+img {
+    width: 400px;
+}
+
 #validators{
-    margin-left: 1rem;
+    margin-left: var(--sixteen-pixels);
 }
 
 
@@ -66,19 +71,7 @@ footer p {
 /* DESKTOP */
 @media all and (min-width:1400px) {
     #profile-pictures {
-        margin: 1rem;
-    }
-
-    main {
-        width: 85%;
-    }
-
-    footer {
-        width: 40%;
-    }
-            
-    img.desktop {
-        width: 100%;
+        margin: var(--sixteen-pixels);
     }
     
     img.tablet, img.phone {
@@ -88,15 +81,14 @@ footer p {
 
 /* TABLET */
 @media all and (min-width:737px) and (max-width:1399px) {
-    aside {
-        margin: 1rem;
-        width: 50%;
+    main {
+        width: 100%;
     }
 
     footer {
-        width: 50%;
+        justify-content: flex-start;
     }
-    
+
     img.desktop, img.phone {
         display: none;
     }  
@@ -104,9 +96,21 @@ footer p {
 
 /* PHONE */
 @media all and (max-width:736px) {
-    img.phone {
+    main, footer {
         width: 100%;
-        display: inline-block;
+        align-items: flex-start;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-left: 5px;
+    }
+
+    img {
+        width: 200px;
     }
     
     img.tablet, img.desktop {
