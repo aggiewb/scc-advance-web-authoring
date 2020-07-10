@@ -25,22 +25,21 @@ ul li:hover, li:first-child {
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul li.icon {
     display: none;
-    height: 59px;
 }
 
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
+@media screen and (max-width:801px) {
+    /* When the screen is less than 801 pixels wide, hide all list items, except for the first one ("Welcome"). 
+    Show the list item that contains the link to open and close the topnav (li.icon) */
     ul li:not(:first-child) {
         display: none;
     }
     
     ul li.icon {
-        display: inline;
+        display: inline-block;
+        height: 59px;
     }
-}
 
-/* The "responsive" class is added to the nav ul with JS when the user clicks on the icon. This class makes the topnav look good on small screens. */
-@media screen and (max-width:680px) {
+    /* The "responsive" class is added to the nav ul with JS when the user clicks on the icon. This class makes the topnav look good on small screens. */
     ul.responsive {
         position: relative;
         display: flex;
