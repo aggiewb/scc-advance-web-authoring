@@ -1,0 +1,119 @@
+:root {
+    --portal-light-color: #d6cec3;
+    --portal-dark-color: #2c363f;
+    --portal-bright-color: #f9dc5c;
+    --sixteen-pixels: 1rem;
+}
+
+body {
+    background-color: var(--portal-dark-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--portal-bright-color);
+    margin: var(--sixteen-pixels);
+    font-size: var(--sixteen-pixels);
+    display: grid;
+    grid-template-rows: [start] 30% [first-line] 50% [second-line] 20%[end];
+}
+
+h1>a, h2 {
+    color: var(--portal-bright-color);
+    font-size: 2.5rem;
+    font-family: 'Lilita One', cursive;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer a, section a {
+    color: #B3CAEA;
+}
+
+  
+/* Change background color of navigation on selected page */
+ul li a.selected {
+    background-color: var(--portal-bright-color);
+    color: var(--portal-dark-color);
+}
+
+header {
+    grid-row: start / first-line;
+}
+
+main {
+    grid-row: first-line / second-line;
+    display: flex;
+    align-content: space-around;
+    
+}
+
+footer {
+    grid-row: second-line / end;
+    display: flex;
+    margin: var(--sixteen-pixels);
+}
+
+footer p {
+    margin: 0;
+}
+
+img {
+    width: 400px;
+}
+
+#validators{
+    margin-left: var(--sixteen-pixels);
+}
+
+
+/* START RESPONSIVE STYLES */
+/* DESKTOP */
+@media all and (min-width:1400px) {
+    #profile-pictures {
+        margin: var(--sixteen-pixels);
+    }
+    
+    img.tablet, img.phone {
+        display: none;
+    }  
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+    main {
+        width: 100%;
+    }
+
+    footer {
+        justify-content: flex-start;
+    }
+
+    img.desktop, img.phone {
+        display: none;
+    }  
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    main, footer {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-left: 5px;
+    }
+
+    img {
+        width: 200px;
+    }
+    
+    img.tablet, img.desktop {
+        display: none;
+    }  
+}

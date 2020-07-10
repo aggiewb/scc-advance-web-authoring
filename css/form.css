@@ -1,0 +1,47 @@
+:root {
+    --form-light-color: #d6cec3;
+    --form-bright-color: #f9dc5c;
+    --one-pixel: 0.0625rem;
+}
+
+/* reCAPTCHA styles */
+form>div {
+    margin: 1rem;
+}
+
+/* writes to small text above reCAPTCHA upon failure */
+
+.dateFeedback{
+    font-style: italic;
+    font-size: 70%;
+    font-weight: bold;
+    color: var(--form-bright-color);
+}
+
+input:required {
+    border: var(--one-pixel) solid var(--form-bright-color);
+}
+
+input:optional, textarea:optional {
+     background-color: #f1f1f1;
+     border: var(--one-pixel) solid var(--form-light-color);
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: solid var(--one-pixel) var(--form-light-color);
+    padding: 0.3rem 0.5rem;
+}
+
+fieldset {
+    border: var(--one-pixel) solid var(--form-light-color);
+    max-width: 21.875rem;
+}
+
+legend {
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-left: var(--one-pixel) solid var(--form-light-color);
+    border-right: var(--one-pixel) solid var(--form-light-color);
+}
