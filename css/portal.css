@@ -1,24 +1,26 @@
+/* Using CSS custom properties (variables) */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* A common best practice is to define custom properties on the :root pseudo-class, 
+so that it can be applied globally across your HTML document */
 :root {
     --portal-light-color: #d6cec3;
     --portal-dark-color: #2c363f;
     --portal-bright-color: #f9dc5c;
-    --sixteen-pixels: 1rem;
+    --one-rem: 1rem;
 }
 
 body {
     background-color: var(--portal-dark-color);
     font-family: 'Open Sans', sans-serif;
+    font-size: var(--one-rem);
     color: var(--portal-bright-color);
-    margin: var(--sixteen-pixels);
-    font-size: var(--sixteen-pixels);
-    display: grid;
-    grid-template-rows: [start] 30% [first-line] 50% [second-line] 20%[end];
+    margin: var(--one-rem);
 }
 
 h1>a, h2 {
-    color: var(--portal-bright-color);
-    font-size: 2.5rem;
     font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    color: var(--portal-bright-color);
     text-decoration: none;
 }
 
@@ -26,52 +28,28 @@ h1 {
     text-align: center;
 }
 
-footer a, section a {
+h2 {
+    margin-top: 0;
+}
+
+footer a, article a {
     color: #B3CAEA;
 }
 
-  
-/* Change background color of navigation on selected page */
-ul li a.selected {
-    background-color: var(--portal-bright-color);
-    color: var(--portal-dark-color);
-}
-
-header {
-    grid-row: start / first-line;
-}
-
-main {
-    grid-row: first-line / second-line;
+main, footer {
     display: flex;
-    align-content: space-around;
-    
 }
 
-footer {
-    grid-row: second-line / end;
-    display: flex;
-    margin: var(--sixteen-pixels);
-}
-
-footer p {
-    margin: 0;
-}
-
-img {
-    width: 400px;
-}
-
-#validators{
-    margin-left: var(--sixteen-pixels);
+footer p, #validators {
+    margin: auto 2px;
 }
 
 
 /* START RESPONSIVE STYLES */
 /* DESKTOP */
 @media all and (min-width:1400px) {
-    #profile-pictures {
-        margin: var(--sixteen-pixels);
+    img.desktop {
+        margin: 5.5rem 1rem;
     }
     
     img.tablet, img.phone {
@@ -80,39 +58,31 @@ img {
 }
 
 /* TABLET */
-@media all and (min-width:737px) and (max-width:1399px) {
-    main {
-        width: 100%;
-    }
-
-    footer {
-        justify-content: flex-start;
+@media all and (min-width:802px) and (max-width:1399px) {
+    img.tablet {
+        margin: 5rem 1rem;
     }
 
     img.desktop, img.phone {
         display: none;
-    }  
+    }
 }
-
+    
 /* PHONE */
-@media all and (max-width:736px) {
-    main, footer {
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    h2 {
-        margin-top: 0;
-    }
-
+@media all and (max-width:801px) {
     p {
         margin-left: 5px;
     }
 
-    img {
-        width: 200px;
+    footer {
+        flex-direction: column;
+        align-items: center;
     }
     
+    img.phone {
+        margin: 0.5rem 1rem;
+    }
+
     img.tablet, img.desktop {
         display: none;
     }  
