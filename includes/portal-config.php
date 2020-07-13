@@ -13,26 +13,31 @@ function getTitleString($pageType){
 switch(THIS_PAGE){
     case 'index.php':
         $title = getTitleString('Title');
+        $logo = 'fa-bullhorn';
         $pageId = 'About me';
     break;
 
     case 'contactme.php':
         $title = getTitleString('Contact');
+        $logo = 'fa-pencil';
         $pageId = 'Contact Aggie';
     break;
 
     case 'flowchart.php':
         $title = getTitleString('Flowchart');
+        $logo = 'fa-arrows';
         $pageId = 'Flowchart';
     break;
 
     case 'aia.php':
         $title = getTitleString('AIA');
+        $logo = 'fa-check-circle';
         $pageId = 'AIA';
     break;
 
     default:
         $title = THIS_PAGE;
+        $logo = 'fa-exclamation-circle';
         $pageId = 'Not yet constructed';
 }
 
