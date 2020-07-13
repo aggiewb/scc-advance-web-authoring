@@ -1,4 +1,4 @@
-<?php include 'portal-config.php'?>
+<?php include "portal-config.php"?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
