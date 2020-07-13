@@ -5,7 +5,7 @@
         <img src="images/aggie_phone.png" alt="A headshot picture of Aggie with a wide smile" class="phone">
     </div>
     <article>
-        <h2>About me</h2>
+        <h2 class="pageId"><span class="fa <?=$logo?>"></span><?=$pageId?></h2>
         <p>My name is Aggie, and I am working towards a web development certificate from Seattle Central College with additional focus on web 
         scripting and software development, and I currently live in the Maple Leaf neighborhood with my husband.</p>
 
