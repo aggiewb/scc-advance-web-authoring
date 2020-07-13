@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Aggie's IT162 Portal</title>
+        <title><?=$title?></title>
         <link href="css/portal.css" rel="stylesheet">
         <link href="css/nav.css" rel="stylesheet">
         <link href="css/form.css" rel="stylesheet">
