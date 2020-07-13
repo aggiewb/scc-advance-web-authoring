@@ -10,6 +10,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, nofollow">
+        <script src="https://use.fontawesome.com/58798bcc2d.js"></script>
     </head>
     <body>
         <header>
