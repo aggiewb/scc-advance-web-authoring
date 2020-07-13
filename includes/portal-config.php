@@ -4,6 +4,9 @@ portal-config.php
 Used to store all of our WEB120 configuration information
 */
 
+//Output buffering which prevents data from being sent early
+ob_start();
+
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 function getTitleString($pageType){
