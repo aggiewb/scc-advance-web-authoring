@@ -16,12 +16,7 @@
             <h1><a href="index.php">Aggie Wheeler Bateman IT162 Portal</a></h1>
             <nav>
                 <ul class="not-responsive">
-                    <li><a href="index.php">Welcome</a></li>
-                    <li><a href="big/index.php">Big</a></li>
-                    <li><a href="aia.php">AIA</a></li>
-                    <li><a href="flowchart.php">Flowchart</a></li>
-                    <li><a href="fp/index.php">Final Project</a></li>
-                    <li><a href="contactme.php">Contact Aggie</a></li>
+                    <?=createLinks($navMain)?>
                     <li class="icon"><a>&#9776;</a></li>
                 </ul>
             </nav>
