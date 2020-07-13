@@ -1,3 +1,3 @@
 <?php include "includes/header.php";?>
-<h2>Contact Me</h2>
+<h2 class="pageId"><?=$pageId?></h2>
 <?php include "includes/footer.php";?>
