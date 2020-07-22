@@ -38,6 +38,12 @@ switch(THIS_PAGE){
         $pageId = 'AIA';
     break;
 
+    case 'contact-me.php':
+        $title = getTitleString('Contact Me');
+        $logo = 'fa-envelope-o';
+        $pageId = 'Contact Me';
+    break;
+
     default:
         $title = THIS_PAGE;
         $logo = 'fa-exclamation-circle';
