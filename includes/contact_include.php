@@ -54,13 +54,8 @@ $server = 'hostgator.com';
 
 spl_autoload_register('MyAutoLoader::NamespaceLoader');#will check subfolders as namespaces
 include 'ReCaptcha/ReCaptcha.php'; #required reCAPTCHA class code 
-if(
-    !isset($siteKey) || 
-    !isset($secretKey) || 
-    $siteKey == ''  ||  
-    $secretKey == ''
-)      
-{//siteKeys not provided - exit
+if(!isset($siteKey) || !isset($secretKey) || $siteKey == '' || $secretKey == ''){
+    //siteKeys not provided - exit
     echo '<p>Please go into the contact_include.php file and place 
     the <b>$siteKey</b> and <b>$secretKey</b> for the domain where your forms 
     will be posted.</p>';
@@ -84,24 +79,21 @@ if(
     echo loadContact('simple.php','new_feedback.php');//custom feedback page
 */
 
-function loadContact($form,$feedback='')
-{
+function loadContact($form, $feedback = ''){
     global $toName,$toAddress,$website,$siteKey,$secretKey,$server;
     
-    if($toAddress=='' || $toAddress == 'name@example.com')
-    {
+    if($toAddress == '' || $toAddress == 'name@example.com'){
         echo '<p>Please place a real email into the variable named <b>$toAddress</b> on your web page.</p>';
         die;
     }
 
     //fields to skip in email message
     $skipFields = 'g-recaptcha-response,Email';
-    if($feedback == '')
-    {
+    if($feedback == ''){
         $feedback = 'feedback.php';
     }
     
-    if (isset($_POST['g-recaptcha-response'])):
+    if(isset($_POST['g-recaptcha-response'])):
     // If the form submission includes the "g-captcha-response" field
     // Create an instance of the service using your secret
     $recaptcha = new \ReCaptcha\ReCaptcha($secretKey);
@@ -114,25 +106,33 @@ function loadContact($form,$feedback='')
         $aSkip = explode(",",$skipFields); #split form elements to skip into array
         $postData = show_POST($aSkip);#loops through and creates select POST data for display/email
         $fromAddress = "";//default
-        if(is_email($_POST['Email']))
-        {#Only use Email for return address if valid
+        if(is_email($_POST['Email'])){
+            #Only use Email for return address if valid
             $fromAddress = $_POST['Email'];
             # extra email injector paranoia courtesy of DH: http://wiki.dreamhost.com/PHP_mail()#Mail_Header_Injection
             $fromAddress = preg_replace("([\r\n])", "", $fromAddress);
         }
 
-        if(isset($_POST['Name'])){$Name = $_POST['Name'];}else{$Name = "";} #Name, if used part of subject
+        if(isset($_POST['Name'])){
+            $Name = $_POST['Name'];
+        } else {
+            $Name = "";
+        } #Name, if used part of subject
 
-        if($Name != ""){$SubjectName = " from: " . $Name . ",";}else{$SubjectName = "";} #Name, if used part of subject
-        $postData = str_replace("<br />",PHP_EOL . PHP_EOL,$postData);#replace <br /> tags with double c/r
-        $Subject= $website . " message" . $SubjectName . " " . date('F j, Y g:i a');
-        $txt =  $Subject . PHP_EOL . PHP_EOL  . $postData; 
+        if($Name != ""){
+            $SubjectName = " from: " . $Name . ",";
+        } else {
+            $SubjectName = "";
+        } #Name, if used part of subject
+        $postData = str_replace("<br />",PHP_EOL . PHP_EOL,$postData); #replace <br /> tags with double c/r
+        $Subject = $website . " message" . $SubjectName . " " . date('F j, Y g:i a');
+        $txt =  $Subject . PHP_EOL . PHP_EOL . $postData; 
         
         //optional identification of name of email server reduces chance of being identified as spam
-        if($server==''){
+        if($server == ''){
             $server=$_SERVER["SERVER_NAME"];
         }
-         email_handler($toAddress,$toName,$Subject,$txt,$fromAddress,$Name,$website,$server);
+        email_handler($toAddress,$toName,$Subject,$txt,$fromAddress,$Name,$website,$server);
 
         //show feedback
         include_once $feedback;
@@ -148,7 +148,7 @@ else:
     include_once 'ReCaptcha/js_includes.php'; #hides JS
 endif;
 
-}//end loadContact()
+}
 
 /**
  * formats PHP POST data to text for email, feedback
@@ -157,18 +157,17 @@ endif;
  * @return string text of all POST elements & data, underscores removed
  * @todo none
  */
-function show_POST($aSkip)
-{#formats PHP POST data to text for email, feedback
+function show_POST($aSkip){#formats PHP POST data to text for email, feedback
 	$myReturn = ""; #init return var
 	foreach($_POST as $varName=> $value)
 	{#loop POST vars to create JS array on the current page - include email
-	 	if(!in_array($varName,$aSkip) || $varName == 'Email')
-	 	{#skip passover elements
-	 		$strippedVarName = str_replace("_"," ",$varName);#remove underscores
-			if(is_array($_POST[$varName]))
-		 	{#checkboxes are arrays, and we need to loop through each checked item to insert
-		 	    $myReturn .= $strippedVarName . ": " . sanitize_it(implode(",",$_POST[$varName])) . "<br />";
-	 		}else{//not an array, create line
+	 	if(!in_array($varName,$aSkip) || $varName == 'Email'){
+             #skip passover elements
+             $strippedVarName = str_replace("_"," ",$varName);#remove underscores
+			 if(is_array($_POST[$varName])){
+                 #checkboxes are arrays, and we need to loop through each checked item to insert
+		 	     $myReturn .= $strippedVarName . ": " . sanitize_it(implode(",",$_POST[$varName])) . "<br />";
+	 		} else {//not an array, create line
 	 			$strippedValue = nl_2br2($value); #turn c/r to <br />
 	 			$strippedValue = str_replace("<br />","~!~!~",$strippedValue);#change <br /> to our 'unique' string: "~!~!~"
 	 			//sanitize_it() function commented out as it can cause errors - see word doc
@@ -179,7 +178,7 @@ function show_POST($aSkip)
 		}
 	}
 	return $myReturn;
-}#end show_POST()
+}
 
 /**
  * Strips tags & extraneous stuff, leaving text, numbers, punctuation.  
@@ -193,12 +192,11 @@ function show_POST($aSkip)
  * @return data returned after 'sanitized'
  * @todo none
  */
-function sanitize_it($str)
-{#We would like to trust the user, and aren't using a DB, but we'll limit input to alphanumerics & punctuation
+function sanitize_it($str){#We would like to trust the user, and aren't using a DB, but we'll limit input to alphanumerics & punctuation
 	$str = strip_tags($str); #remove HTML & script tags	
 	$str = preg_replace("/[^[:alnum:][:punct:]]/"," ",$str);  #allow alphanumerics & punctuation - convert the rest to single spaces
 	return $str;
-}#end sanitize_it()
+}
 
 /**
  * Checks for email pattern using PHP regular expression.  
@@ -210,11 +208,13 @@ function sanitize_it($str)
  * @return boolean returns true if matches pattern.
  * @todo none
  */
-function is_email($myString)
-{
-  if(preg_match("/^[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-]+\.[a-zA-Z0-9_\-]+$/",$myString))
-  {return true;}else{return false;}
-}#end is_email()
+function is_email($myString){
+  if(preg_match("/^[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-]+\.[a-zA-Z0-9_\-]+$/",$myString)){
+      return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * br2nl() changes '<br />' tags  to '\n' (newline)  
@@ -228,8 +228,7 @@ function is_email($myString)
  * @return string Data stripped of <br /> tag variations, replaced with new line 
  * @todo none 
  */
-function br_2nl($text)
-{
+function br_2nl($text){
 	$nl = "\n";   //new line character
     $text = str_replace("<br />",$nl,$text);  //XHTML <br />
     $text = str_replace("<br>",$nl,$text); //HTML <br>
@@ -240,7 +239,7 @@ function br_2nl($text)
 	$lf = chr(10); // 0x0A [\n] (line feed)
 	$crlf = $cr . $lf; // [\r\n] carriage return/line feed)
     */
-}#end br2nl()
+}
 
 /**
  * nl2br2() changes '\n' (newline)  to '<br />' tags
@@ -255,22 +254,19 @@ function br_2nl($text)
  * @return string Data stripped of <br /> tag variations, replaced with new line 
  * @todo none
  */
-function nl_2br2($text)
-{
+function nl_2br2($text){
 	$text = str_replace(array("\r\n", "\r", "\n"), "<br />", $text);
 	return $text;
-}#end nl2br2()
+}
 
-function email_handler($toEmail,$toName,$subject,$body,$fromEmail,$fromName,$website,$domain)
-{
+function email_handler($toEmail,$toName,$subject,$body,$fromEmail,$fromName,$website,$domain){
 	$debug=false;//true may show message
 	if($fromName==""){$fromName = $website;} //default to website if name not provided
 	$headers[] = "MIME-Version: 1.0";
 	$headers[] = "Content-type: text/plain; charset=iso-8859-1";
 	$headers[] = "From: {$fromName} <noreply@{$domain}>";
     
-	if(isset($fromEmail) && $fromEmail != "")
-	{//only add reply info if provided
+	if(isset($fromEmail) && $fromEmail != ""){//only add reply info if provided
 		$headers[] = "Reply-To: {$fromName} <{$fromEmail}>";
 	}
 	$headers[] = "Subject: {$subject}";
@@ -278,14 +274,14 @@ function email_handler($toEmail,$toName,$subject,$body,$fromEmail,$fromName,$web
 	
     //target of form
 	$toEmail = 'To:' . $toName . ' <' . $toEmail . '>'; 
-	if(@mail($toEmail, $subject, $body, implode(PHP_EOL, $headers)))
-	{//only echo if debug is true
+	if(@mail($toEmail, $subject, $body, implode(PHP_EOL, $headers))){//only echo if debug is true
 		if($debug){echo 'Email sent! ' . date("m/d/y, g:i A");}
-	}else{
-		if($debug){echo 'Email NOT sent! Unknown error. ' . date("m/d/y, g:i A");}	
+	} else {
+		if($debug){
+            echo 'Email NOT sent! Unknown error. ' . date("m/d/y, g:i A");
+        }	
 	}	
-
-}//end email_handler()
+}
 
 /**
  * This class stores a collection of static methods to load any number of 
@@ -306,8 +302,7 @@ function email_handler($toEmail,$toName,$subject,$body,$fromEmail,$fromName,$web
  * </code>
  */
 
-class MyAutoLoader
-{
+class MyAutoLoader{
     /**
 	 * Uses context of calling file's relative path to call 
 	 * a class in a relative sub-folder accessible by it's namespace:
@@ -316,23 +311,18 @@ class MyAutoLoader
 	 * $mySurvey = new SurveySez\Survey(1);
 	 * </code>
 	 */
-	public static function NamespaceLoader($class)
-    {
+	public static function NamespaceLoader($class){
         //namespaces use backslashes, file paths use forward slashes in UNIX.  
 		//we convert them here, but use a constant to remain platform independent
 		$path = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $class);
         $path = __DIR__ . '/' . $path . '.php';
 		//if file exists, include and load class file
-		if (file_exists($path)) {
+		if(file_exists($path)){
 			include $path;
 			return; //go no farther
-		}else{
+		} else {
             echo 'include file not found!';
             die;
         }
-    }#end NamespaceLoader()
-
-}#end MyAutoLoader class
-
-
-
+    }
+}
