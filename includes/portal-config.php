@@ -49,7 +49,6 @@ $navMain = array(
     'big/index.php'=>'Big', 
     'aia.php'=>'AIA', 
     'flowchart.php'=>'Flowchart', 
-    'fp/index.php'=>'Final Project', 
     'contactme.php'=>'Contact Aggie'
 );
 
