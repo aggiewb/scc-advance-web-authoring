@@ -49,7 +49,7 @@ $navMain = array(
     'big/index.php'=>'Big', 
     'aia.php'=>'AIA', 
     'flowchart.php'=>'Flowchart', 
-    'contactme.php'=>'Contact Aggie'
+    'contact-me.php'=>'Contact Aggie'
 );
 
 function createLinks($nav){
