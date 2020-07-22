@@ -141,12 +141,12 @@
 
         include 'includes/contact_include.php'; #site keys & code here
     
-        $toAddress = "name@example.com";  //place your/your client's email address here
-        $toName = "CLIENT NAME HERE"; //place your client's name here
-        $website = "CLIENT WEBSITE NAME HERE";  //place NAME of your client's website
+        $toAddress = "aggiewbdev@gmail.com";
+        $toName = "Aggie Wheeler Bateman";
+        $website = "https://www.aggiewheelerbateman.com/it162/";
 
-        echo loadContact('simple.php');#demonstrates a simple contact form
-        //echo loadContact('multiple.php');#demonstrates multiple form elements
+        echo loadContact('simple.php'); #demonstrates a simple contact form
+        //echo loadContact('multiple.php'); #demonstrates multiple form elements
 	?>
     </main>
     <footer>
