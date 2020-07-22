@@ -38,6 +38,12 @@ switch(THIS_PAGE){
         $pageId = 'AIA';
     break;
 
+    case 'contact-me.php':
+        $title = getTitleString('Contact Me');
+        $logo = 'fa-envelope-o';
+        $pageId = 'Contact Me';
+    break;
+
     default:
         $title = THIS_PAGE;
         $logo = 'fa-exclamation-circle';
@@ -49,8 +55,7 @@ $navMain = array(
     'big/index.php'=>'Big', 
     'aia.php'=>'AIA', 
     'flowchart.php'=>'Flowchart', 
-    'fp/index.php'=>'Final Project', 
-    'contactme.php'=>'Contact Aggie'
+    'contact-me.php'=>'Contact Aggie'
 );
 
 function createLinks($nav){
