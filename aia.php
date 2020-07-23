@@ -24,24 +24,25 @@
     </tr>
 </table>
 
+<h3>Audience, Issues, and Approach Model</h3>
 <table>
     <tr>
-        <th scope="row"></th>
+        <th scope="col">Audiences</th>
+        <th scope="col">Issues, Concerns, Needs</th>
+        <th scope="col">Approach</th>
+    </tr>
+    <tr>
+        <td>Novice Developers</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <th scope="row"></th>
+        <td>Experienced Developers</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <th scope="row"></th>
+        <td>Game Designers</td>
         <td></td>
         <td></td>
     </tr>
