@@ -37,8 +37,20 @@
         <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
         Screen resolution 1280x768 or better, Internet bandwidth/speeds vary, Beginner Computer Skills</p>
         </td>
-        <td></td>
-        <td></td>
+        <td>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td>
@@ -47,8 +59,20 @@
         Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some JavaScript knowledge, 
         Intermediate Computer Skills</p>
         </td>
-        <td></td>
-        <td></td>
+        <td>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td>
@@ -57,7 +81,13 @@
         Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some knowledge on pixel art, 
         spriting, and JavaScript, Intermediate Computer Skills</p>
         </td>
-        <td></td>
+        <td>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </td>
         <td></td>
     </tr>
 </table>
