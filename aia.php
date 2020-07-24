@@ -88,7 +88,13 @@
                 <li></li>
             </ul>
         </td>
-        <td></td>
+        <td>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </td>
     </tr>
 </table>
 <?php include "includes/footer.php";?>
