@@ -1,5 +1,5 @@
 /* Remove padding from the list, and add a background color */
-ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     background-color: #d6cec3;
@@ -8,7 +8,7 @@ ul {
     display: flex;
 }
 
-ul li a {
+nav ul li a {
     display: inline-block;
     color: #2c363f;
     text-align: center;
@@ -18,45 +18,45 @@ ul li a {
     font-size: 1.5rem;
 }
 
-ul li:hover, li.selected {
+nav ul li:hover, li.selected {
     background-color: #f9dc5c;
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul li.icon {
+nav ul li.icon {
     display: none;
 }
 
 @media screen and (max-width:801px) {
     /* When the screen is less than 801 pixels wide, hide all list items, except for the first one ("Welcome"). 
     Show the list item that contains the link to open and close the topnav (li.icon) */
-    ul li:not(:first-child) {
+    nav ul li:not(:first-child) {
         display: none;
     }
     
-    ul li.icon {
+    nav ul li.icon {
         display: inline-block;
         height: 59px;
     }
 
     /* The "responsive" class is added to the nav ul with JS when the user clicks on the icon. This class makes the topnav look good on small screens. */
-    ul.responsive {
+    nav ul.responsive {
         position: relative;
         display: flex;
         flex-direction: column;
     }
     
-    ul.responsive li.icon {
+    nav ul.responsive li.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    ul.responsive li {
+    nav ul.responsive li {
         display: inline;
     }
 
-    ul.responsive li a {
+    nav ul.responsive li a {
         display: block;
         text-align: left;
     }
