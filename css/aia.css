@@ -1,0 +1,14 @@
+table {
+    border: 0.125rem #d6cec3 solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: #d6cec3;
+    color: #2c363f;
+    border: 0.125rem #2c363f solid;
+}
+
+td:hover {
+    background-color: #F7F5F3;
+}
