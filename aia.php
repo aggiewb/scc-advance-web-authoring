@@ -77,7 +77,7 @@
     <tr>
         <td>
         Game Designers
-        <p>10 y/o+, all genders, all income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
+        <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
         Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some knowledge on pixel art, 
         spriting, and JavaScript, Intermediate Computer Skills</p>
         </td>

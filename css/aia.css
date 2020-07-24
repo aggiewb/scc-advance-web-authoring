@@ -4,11 +4,11 @@ table {
 }
 
 th, td {
-    background-color: #d6cec3;
     color: #2c363f;
     border: 0.125rem #2c363f solid;
+    background-color: #d6cec3;
 }
 
-td:hover {
+tr:hover td{
     background-color: #F7F5F3;
 }
