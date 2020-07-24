@@ -32,17 +32,31 @@
         <th scope="col">Approach</th>
     </tr>
     <tr>
-        <td>Novice Developers</td>
+        <td>
+        Game Players
+        <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
+        Screen resolution 1280x768 or better, Internet bandwidth/speeds vary, Beginner Computer Skills</p>
+        </td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>Experienced Developers</td>
+        <td>
+        Developers
+        <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
+        Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some JavaScript knowledge, 
+        Intermediate Computer Skills</p>
+        </td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>Game Designers</td>
+        <td>
+        Game Designers
+        <p>10 y/o+, all genders, all income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
+        Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some knowledge on pixel art, 
+        spriting, and JavaScript, Intermediate Computer Skills</p>
+        </td>
         <td></td>
         <td></td>
     </tr>
