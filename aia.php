@@ -33,66 +33,66 @@
     </tr>
     <tr>
         <td>
-        Game Players
+        Non JavaScript Developer Game Maker
         <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
         Screen resolution 1280x768 or better, Internet bandwidth/speeds vary, Beginner Computer Skills</p>
         </td>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Licensing/Cost</li>
+                <li>Functionality</li>
+                <li>Finding the plugin that fits their design need</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Display the license description used for all plugins on index page</li>
+                <li>Show that they are tested by displaying demo gifs which demonstrates use of the plugin, labeling the particular use of the plugin, and display screenshots of the admin configuration</li>
+                <li>Add navigable sections for each type of plugin for convenient browsing</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-        Developers
+        JavaScript Developer Game Maker
         <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
-        Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some JavaScript knowledge, 
+        Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, JavaScript knowledge, 
         Intermediate Computer Skills</p>
         </td>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Licensing/Cost</li>
+                <li>Functionality</li>
+                <li>Finding the plugin that fits their design need</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Display the license description used for all plugins on index page</li>
+                <li>Show that they are tested by displaying demo gifs which demonstrates use of the plugin and labeling the particular use of the plugin</li>
+                <li>Add navigable sections for each type of plugin for convenient browsing</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-        Game Designers
+        Other plugin authors
         <p>10 y/o+, All genders, All income levels, Some primary education, Windows/Mac/Steam/Android/iOS user, 
-        Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, May need some knowledge on pixel art, 
-        spriting, and JavaScript, Intermediate Computer Skills</p>
+        Internet bandwidth/speeds vary, Screen resolution 1280x768 or better, JavaScript knowledge, 
+        Intermediate Computer Skills</p>
         </td>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Licensing/Cost</li>
+                <li>Documentation</li>
+                <li>Compatibility</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Display the license description used for all plugins on index page</li>
+                <li>Add links to all GitHub repos to display documentation</li>
+                <li>Add links to all GitHub repos' code to show the use of best coding practices</li>
             </ul>
         </td>
     </tr>
