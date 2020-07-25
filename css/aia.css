@@ -7,8 +7,13 @@ th, td {
     color: #2c363f;
     border: 0.125rem #2c363f solid;
     background-color: #d6cec3;
+    vertical-align: top;
 }
 
 tr:hover td{
     background-color: #F7F5F3;
+}
+
+td:first-child {
+    padding: 1.375rem;
 }
