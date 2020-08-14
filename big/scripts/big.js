@@ -1,9 +1,9 @@
 (function($){$(document).ready(function(){
 
-$('#cssmenu > ul').prepend('<li class=\"mobile\"><a href=\"#\"><span>Menu <i>&#9776;</i></span></a></li>');
+$('nav > ul').prepend('<li class=\"mobile\"><a href=\"#\"><span>Menu <i>&#9776;</i></span></a></li>');
 
-$('#cssmenu > ul > li > a').click(function(e){
-  $('#cssmenu li').removeClass('active');
+$('nav > ul > li > a').click(function(e){
+  $('nav li').removeClass('active');
   $(this).closest('li').addClass('active');	
   
   const checkElement = $(this).next();
@@ -14,13 +14,13 @@ $('#cssmenu > ul > li > a').click(function(e){
   }
 
   if((checkElement.is('ul')) && (!checkElement.is(':visible'))){
-    $('#cssmenu ul ul:visible').slideUp('normal');
+    $('nav ul ul:visible').slideUp('normal');
     checkElement.slideDown('normal');
   }
 
   if($(this).parent().hasClass('mobile')){
     e.preventDefault();
-    $('#cssmenu').toggleClass('expand');
+    $('nav').toggleClass('expand');
   }
   
   return ($(this).closest('li').find('ul').children().length === 0);	
