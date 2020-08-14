@@ -5,7 +5,12 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Web Dev Examples by Aggie</title>
+            
+            <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+            <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
+            <script src="./scripts/big-nav.js"></script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            
             <link rel="stylesheet" href="./css/big-nav.css">
             <link rel="stylesheet" href="./css/big.css">
             <link rel="stylesheet" href="./css/form.css">
