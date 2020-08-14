@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
 /* Base Styles */
-#cssmenu, #cssmenu ul, #cssmenu li, #cssmenu a {
+nav, nav ul, nav li, nav a {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,16 +15,16 @@
   position: relative;
 }
 
-#cssmenu a {
+nav a {
   line-height: 1.5;
 }
 
-#cssmenu {
+nav {
   width: auto;
   background: #fff;
 }
 
-#cssmenu > ul {
+nav > ul {
   border: 1px solid #000;
   -moz-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.2);
@@ -39,26 +39,26 @@
   border-radius: 4px;
 }
 
-#cssmenu > ul:after {
+nav > ul:after {
   clear: both;
   content: '';
   display: table;
 }
 
 @media all and (max-width: 480px) {
-  #cssmenu > ul {
+  nav > ul {
     max-height: 32px;
     overflow: hidden;
     -webkit-transition: max-height 0.5s;
     transition: max-height 0.5s;
   }
 
-  #cssmenu.expand ul {
+  nav.expand ul {
     max-height: 900px;
   }
 }
 
-#cssmenu > ul > li {
+nav > ul > li {
   border-right: 1px solid #000;
   -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2);
@@ -66,11 +66,11 @@
   float: left;
 }
 
-#cssmenu > ul > li.mobile {
+nav > ul > li.mobile {
   display: none;
 }
 
-#cssmenu > ul > li.active {
+nav > ul > li.active {
   background: #444444;
   background: -moz-linear-gradient(#444444 0%, #323232 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444444), color-stop(100%, #323232));
@@ -79,7 +79,7 @@
 }
 
 @media all and (max-width: 480px) {
-  #cssmenu > ul > li {
+  nav > ul > li {
     border-right: 0 none;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
@@ -88,17 +88,17 @@
     float: none;
   }
 
-  #cssmenu > ul > li.mobile {
+  nav > ul > li.mobile {
     display: block;
   }
 
-  #cssmenu > ul > li.mobile i {
+  nav > ul > li.mobile i {
     float: right;
     font-style: normal;
   }
 }
 
-#cssmenu > ul > li:last-child {
+nav > ul > li:last-child {
   border-right: 0 none;
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
@@ -107,19 +107,19 @@
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
 }
-#cssmenu > ul > li:last-child ul {
+nav > ul > li:last-child ul {
   left: auto;
   right: 0;
 }
 
-#cssmenu > ul > li.mobile {
+nav > ul > li.mobile {
   border-right: 0 none;
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
 }
 
-#cssmenu > ul > li > a {
+nav > ul > li > a {
   margin: 0 0 2px 0;
   font-size: 12px;
   display: block;
@@ -127,27 +127,27 @@
   text-shadow: 0 1px 1px #000;
 }
 
-#cssmenu > ul > li > a > span {
+nav > ul > li > a > span {
   display: block;
   padding: 6px 10px;
   font-weight: bold;
 }
 
-#cssmenu > ul > li > a:hover {
+nav > ul > li > a:hover {
   text-decoration: none;
 }
 
-#cssmenu > ul > li.active {
+nav > ul > li.active {
   border-bottom: none;
 }
 
-#cssmenu > ul > li.active > a {
+nav > ul > li.active > a {
   color: #fff;
   text-shadow: 0 1px 1px #000;
 }
 
 /* Sub menu */
-#cssmenu ul ul {
+nav ul ul {
   background: #F9F9F9;
   border: 1px solid #CCC;
   -webkit-border-radius: 4px;
@@ -166,23 +166,23 @@
 }
 
 @media all and (max-width: 480px) {
-  #cssmenu ul ul {
+  nav ul ul {
     position: relative;
     top: 0;
     width: 100%;
   }
 }
-#cssmenu ul ul li {
+nav ul ul li {
   padding: 3px 0;
 }
 
-#cssmenu ul ul a {
+nav ul ul a {
   color: #999;
   display: block;
   font-size: 12px;
   font-weight: bold;
 }
 
-#cssmenu ul ul a:hover {
+nav ul ul a:hover {
   color: #444;
 }
