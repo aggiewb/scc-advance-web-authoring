@@ -6,9 +6,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Web Dev Examples by Aggie</title>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="css/big-nav.css">
-            <link rel="stylesheet" href="css/big.css">
-            <link rel="stylesheet" href="css/form.css">
+            <link rel="stylesheet" href="./css/big-nav.css">
+            <link rel="stylesheet" href="./css/big.css">
+            <link rel="stylesheet" href="./css/form.css">
         </head>
         <body>
             <header>
@@ -17,10 +17,10 @@
                     <ul>
                         <li><a href="https://www.aggiewheelerbateman.com/it162/"><span><i class="fa fa-fw fa-bank"></i> IT162</span></a></li>
                         <li><a href="index.php"><span><i class="fa fa-fw fa-home"></i> BIG</span></a></li>
-                        <li><a href="../research/flexbox.php"><span><i class="fa fa-fw fa-cube"></i> Flexbox</span></a></li>
-                        <li><a href="../research/galleries.php"><span><i class="fa fa-fw fa-camera-retro"></i> Galleries</span></a></li>
-                        <li><a href="../research/shopping-carts.php"><span><i class="fa fa-fw fa-shopping-basket"></i> Shopping Carts</span></a></li>
-                        <li><a href="../research/site-app.php"><span><i class="fa fa-fw fa-html5"></i> Site vs App</span></a></li>
+                        <li><a href="flexbox.php"><span><i class="fa fa-fw fa-cube"></i> Flexbox</span></a></li>
+                        <li><a href="galleries.php"><span><i class="fa fa-fw fa-camera-retro"></i> Galleries</span></a></li>
+                        <li><a href="shopping-carts.php"><span><i class="fa fa-fw fa-shopping-basket"></i> Shopping Carts</span></a></li>
+                        <li><a href="site-app.php"><span><i class="fa fa-fw fa-html5"></i> Site vs App</span></a></li>
                         <li><a href="#"><span><i class="fa fa-fw fa-chevron-down"></i> Google</span></a>
                         <ul>
                             <li><a href="calendar.php"><span><i class="fa fa-fw fa-calendar"></i> Calendar</span></a></li>

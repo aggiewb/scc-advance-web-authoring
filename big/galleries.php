@@ -1,4 +1,4 @@
-<?php include "/includes/header.php";?>
+<?php include "./includes/header.php";?>
 <article>
     <h2>Galleries</h2>
     <p>Website media galleries can be a great way to show off relevant business products. There are a variety of options available to fit financial needs, feature requirements, and device support. Here we’ll discuss three responsive JavaScript based galleries, Nanogallery2, PhotoSwipe, and Galleria.</p>
@@ -19,4 +19,4 @@
         <li>Semenov, Dmitry. “Responsive JavaScript Image Gallery.” PhotoSwipe, <a href="photoswipe.com/" target="_blank">photoswipe.com/</a>.</li>
     </ul>
 </aside>
-<?php include "/includes/footer.php";?>
+<?php include "./includes/footer.php";?>

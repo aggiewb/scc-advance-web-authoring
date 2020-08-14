@@ -1,4 +1,4 @@
-<?php include "/includes/header.php";?>
+<?php include "./includes/header.php";?>
 <article>
     <h2>Shopping Carts</h2>
     <p>If you want to take your business into the digital age, an online shopping cart is a necessary component to monetizing your website. There are a variety of e-commerce software platforms available, and these platforms come in a variety of features and costs. Here we’ll look at three of PC Magazine’s top picks listed in 2019, Shopify, Wix Stores, and Ecwid (Martinez).</p>
@@ -21,4 +21,4 @@
         <li>“Wix Pricing Information: Upgrade to a Premium Plan.” Wix Pricing Information | Upgrade to a Premium Plan | Wix.com, Wix, <a href="www.wix.com/upgrade/website" target="_blank">www.wix.com/upgrade/website</a>.</li>
     </ul>
 </aside>
-<?php include "/includes/footer.php";?>
+<?php include "./includes/footer.php";?>

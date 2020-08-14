@@ -1,4 +1,4 @@
-<?php include "/includes/header.php";?>
+<?php include "./includes/header.php";?>
 <article>
     <h2>Responsive vs Mobile</h2>
 
@@ -20,4 +20,4 @@
         <li>“Responsive Web Design.” Wikipedia, Wikimedia Foundation, 30 June 2020, <a href="en.wikipedia.org/wiki/Responsive_web_design" target="_blank">en.wikipedia.org/wiki/Responsive_web_design</a>.</li>
     </ul> 
 </aside>
-<?php include "/includes/footer.php";?>
+<?php include "./includes/footer.php";?>

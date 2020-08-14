@@ -1,4 +1,4 @@
-<?php include "/includes/header.php";?>
+<?php include "./includes/header.php";?>
 <article>
     <h2>Flexbox</h2>
     <p>Flexbox is a CSS method for laying out HTML content to achieve a responsive website design. It is a proven alternative to using floats and positioning, which can be limiting and frustrating. Its effectiveness is achieved through the adjusting of items’ height and width to best fill the available space, since “a flex container expands items to fill free space or shrinks them to prevent overflow(Complete).” While using Flexbox, the basic components are the parent flex container and the children flex items(Complete, Flexbox).</p>
@@ -19,4 +19,4 @@
         <li>“CSS Flexible Box Layout Module.” Can I Use... Support Tables for HTML5, CSS3, Etc, Alexis Deveria, <a href="https://caniuse.com/#feat=flexbox" target="_blank">https://caniuse.com/#feat=flexbox</a>.</li>
     </ul> 
 </aside>
-<?php include "/includes/footer.php";?>
+<?php include "./includes/footer.php";?>
