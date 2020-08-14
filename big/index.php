@@ -1,5 +1,4 @@
-
-<?php include "includes/header.php";?>
+<?php include "/includes/header.php";?>
 <main>
     <article>
         <h2>basic web client question form (using the multiple.php file this time) using reCAPTCHA (v2) again (integrate the code from the contact form assignment)</h2>
@@ -12,4 +11,4 @@
         </p>
     </aside>
 </main>
-<?php include "includes/footer.php";?>
+<?php include "/includes/header.php";?>
