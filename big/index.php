@@ -1,8 +1,17 @@
-<?php include "./includes/header.php";?>
+<?php include "./includes/header.php";
+include "./includes/big_contact_include.php";
+?>
 <main>
     <article>
         <h2 class="pageId"><span class="fa <?=$logo?>"></span><?=$pageId?></h2>
-        <p>There's gonna be a form here.</p>
+        <?php 
+
+        $toAddress = "aggiewbdev@gmail.com";
+        $toName = "Aggie Wheeler Bateman";
+        $website = "https://www.aggiewheelerbateman.com/it162/";
+
+        loadContact('multiple.php');
+        ?>
     </article>
     <aside>
         <h2>Basic Website Design Cycle</h2>
