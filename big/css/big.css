@@ -9,6 +9,14 @@ body {
     color: var(--portal-dark-color);
 }
 
+h1, h2, h3 {
+    font-family: 'Alata', sans-serif;
+}
+
+h2 span {
+    margin-right: 10px;
+}
+
 a {
     color: #FFF;
     text-decoration: none;
