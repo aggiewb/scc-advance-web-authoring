@@ -1,0 +1,35 @@
+:root {
+    --portal-dark-color: #181118;
+    --portal-bright-color: #FA4A86;
+}
+
+body {
+    background-color: var(--portal-bright-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--portal-dark-color);
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px){
+    main {
+        flex-direction: column;
+    }
+    
+    header, footer {
+        text-align: center;
+    }
+}
