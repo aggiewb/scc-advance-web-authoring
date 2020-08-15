@@ -1,7 +1,7 @@
 <?php include "./includes/header.php";?>
 <main>
     <article>
-        <h2>Shopping Carts</h2>
+        <h2 class="pageId"><span class="fa <?=$logo?>"></span><?=$pageId?></h2>
         <p>If you want to take your business into the digital age, an online shopping cart is a necessary component to monetizing your website. There are a variety of e-commerce software platforms available, and these platforms come in a variety of features and costs. Here we’ll look at three of PC Magazine’s top picks listed in 2019, Shopify, Wix Stores, and Ecwid (Martinez).</p>
 
         <p>Shopify offers support 24 hours a day 7 days a week, a free SSL certificate, multiple themes, and the ability to list unlimited products. They also offer a free two week trial with the lowest priced tier priced at $24 USD a month for hosting and two staff member accounts with admin and point of sale access. However, their purchase transaction fees could add up quickly, but may be due to their included fraud analysis (Shopify).</p>

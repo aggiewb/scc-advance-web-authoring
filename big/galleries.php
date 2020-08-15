@@ -1,7 +1,7 @@
 <?php include "./includes/header.php";?>
 <main>
     <article>
-        <h2>Galleries</h2>
+        <h2 class="pageId"><span class="fa <?=$logo?>"></span><?=$pageId?></h2>
         <p>Website media galleries can be a great way to show off relevant business products. There are a variety of options available to fit financial needs, feature requirements, and device support. Here we’ll discuss three responsive JavaScript based galleries, Nanogallery2, PhotoSwipe, and Galleria.</p>
 
         <p>Nanogallery2 is available under a proprietary commercial license which has two options. First, the website license for a single website costs $30 USD. Second, the OEM license for an unlimited number of websites or a single project, application, or theme costs $105 USD. These licenses help ensure that the tool is actively maintained and provides support for a limited time. The main features that this gallery includes are multiple gallery layouts, grid, justified, cascading, and mosaic, thumbnail hover and touch effects, and blurred image preview during image download. Most features are supported in Firefox 6+, Chrome 16+, Edge 13+, IE 11+, Opera 12.1+, Yandex 14.12+, iPhone 5+ / iOS 6+, and Safari 6.2+ (Brisbois).</p>

@@ -1,7 +1,7 @@
 <?php include "./includes/header.php";?>
 <main>
     <article>
-        <h2>Flexbox</h2>
+        <h2 class="pageId"><span class="fa <?=$logo?>"></span><?=$pageId?></h2>
         <p>Flexbox is a CSS method for laying out HTML content to achieve a responsive website design. It is a proven alternative to using floats and positioning, which can be limiting and frustrating. Its effectiveness is achieved through the adjusting of items’ height and width to best fill the available space, since “a flex container expands items to fill free space or shrinks them to prevent overflow(Complete).” While using Flexbox, the basic components are the parent flex container and the children flex items(Complete, Flexbox).</p>
 
         <p>On the flex container, the display property is set to flex, and the default flex-direction property of all of the child items within the parent are set to be placed in a row. However, you can change this to be row-reverse, column, and column-reverse. This establishes the main-axis which allows you to then set the alignment property of all of the items. Justify content is for the alignment along the main axis, and align-items is for the alignment along the cross-axis. Lastly, you can align the parent container’s cross-axis lines when there is extra space with the align-content property(Complete, Flexbox).</p>

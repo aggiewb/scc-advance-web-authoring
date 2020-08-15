@@ -1,8 +1,7 @@
 <?php include "./includes/header.php";?>
 <main>
     <article>
-        <h2>Responsive vs Mobile</h2>
-
+        <h2 class="pageId"><span class="fa <?=$logo?>"></span><?=$pageId?></h2>
         <p>When considering the options for your business’s online presence, you must evaluate whether a mobile app or a responsive website is more appropriate for your needs. They both have pros and cons, and we’ll examine both so you can make the best decision.</p>
 
         <p>Since 81% of Americans own a smartphone and 52% own tablets as of 2019 (Demographics), mobile apps are an important option to consider. Mobile apps have access to specific features such as a camera, microphone, near-field communication, Face ID, and GPS. Users also spend more time while using and engaging with mobile apps (Cherednichenko). Native mobile apps make use of the efficiencies of specific devices to increase performance, consistency, and pleasant user experience. However, many people are experiencing “app fatigue” due to the amount of apps available, and it may be hard to acquire users (Mobile). You might also need to have multiple apps created for different systems, which will take a significant amount of time and money to develop.</p>
