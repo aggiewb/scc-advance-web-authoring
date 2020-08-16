@@ -1,5 +1,5 @@
 <?php include "./includes/header.php";
-include "./includes/big_contact_include.php";
+include "./includes/contact_include.php";
 ?>
 <main>
     <article>
