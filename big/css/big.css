@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-main {
+main, .display-flex {
     display: flex;
     flex-direction: row;
 }
@@ -54,17 +54,28 @@ footer {
     height: 0; 
     overflow: hidden; 
     max-width: 100%;
+    flex-grow: 1;
 } 
 
 .embed-container iframe { 
     position: absolute; 
-    top: 0; left: 0; 
+    top: 20px; 
+    left: 0; 
     width: 70%; 
-    height: 70%; 
+    height: 70%;
+}
+
+.map-aside {
+    margin-top: 0;
+    width: 30%;
+}
+
+.map-aside h2 {
+    margin-top: 0;
 }
 
 @media screen and (max-width: 800px){
-    main {
+    main, .display-flex {
         flex-direction: column;
     }
     
