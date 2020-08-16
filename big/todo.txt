@@ -1,6 +1,5 @@
 TODO
 a responsive Google calendar (with a linked event on it) - the calendar must toggle between agenda view for mobile phone size and calendar view for everything bigger
-a responsive Google map identifying the campus address and also a dialable telephone number (when on a capable device)
 2 webcams: 1 (live) YouTube channel and 1 Department of Transportation (DOT) live web camera on one web page
 
 DONE
@@ -12,3 +11,4 @@ a responsive 2 column layout
 A big-config.php that updates your sites's <title>, a font-awesome icon in each page heading and each page's page ID (sub header)
 a basic web client question form (using the multiple.php file this time) using reCAPTCHA (v2) again (integrate the code from the contact form assignment)
 a responsive YouTube video on Web Accessibility
+a responsive Google map identifying the campus address and also a dialable telephone number (when on a capable device)
