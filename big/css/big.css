@@ -37,10 +37,6 @@ aside li {
     margin-bottom: 10px;
 }
 
-form {
-    width: 500px;
-}
-
 @media screen and (max-width: 800px){
     main {
         flex-direction: column;
