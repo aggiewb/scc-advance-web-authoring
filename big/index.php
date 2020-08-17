@@ -16,9 +16,20 @@ include "./includes/contact_include.php";
     </article>
     <aside>
         <h2>Basic Website Design Cycle</h2>
-        <p>Provide at least 3 (linked) resources that help you and/or your web team with steps found in very basic website design and development cycle. For example, client surveys, wireframing tools, etc.</p>
-        <p>Here's a website to help get you started, https://business.tutsplus.com/articles/...
-        </p>
+        <ul>
+            <li>
+                <a href="https://www.lucidchart.com/pages/">Lucidchart</a>
+                <p>A wireframing tool which can be access for free with a basic account and includes mockup templates.</p>
+            </li>
+            <li>
+                <a href="https://www.surveylegend.com/">SurveyLegend</a>
+                <p>A free online survey tool that can be used for client feedback.</p>
+            </li>
+            <li>
+                <a href="https://randoma11y.com/">Randoma11y</a>
+                <p>A color scheme generator that provides accessible, color-contrasted schemes.</p>
+            </li>
+        </ul>
     </aside>
 </main>
 <?php include "./includes/footer.php";?>
