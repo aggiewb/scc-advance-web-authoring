@@ -13,6 +13,10 @@ h1, h2, h3 {
     font-family: 'Alata', sans-serif;
 }
 
+h2 {
+    margin-right: 20px;
+}
+
 h2 span {
     margin-right: 10px;
 }
